@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <stdbool.h>
 
 void clean_cache() {
     int tmp = system("del /q /s /f %TEMP%\\*.*");
@@ -25,7 +25,16 @@ void flush_dns() {
 }
 
 int main(int argc, char* argv[]) {
-    clean_cache();
-    stop_services();
-    flush_dns();
+    /*config setting*/
+    bool update_disable = true;
+    bool clean_caching = true;
+    bool clean_tmp = true;
+    bool flush_Dns = true;
+    bool restart_ethernet = true;
+
+    if (update_disable && clean_caching && clean_tmp && flush_Dns && restart_ethernet){
+        clean_cache();
+        stop_services();
+        flush_dns();
+    }
 }
