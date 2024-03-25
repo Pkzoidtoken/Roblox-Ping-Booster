@@ -25,16 +25,7 @@ void flush_dns() {
 }
 
 int main(int argc, char* argv[]) {
-    /*config setting*/
-    bool update_disable = true;
-    bool clean_caching = true;
-    bool clean_tmp = true;
-    bool flush_Dns = true;
-    bool restart_ethernet = true;
-
-    if (update_disable && clean_caching && clean_tmp && flush_Dns && restart_ethernet){
-        clean_cache();
-        stop_services();
-        flush_dns();
-    }
+    clean_cache();
+    stop_services();
+    flush_dns();
 }
