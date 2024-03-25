@@ -15,7 +15,7 @@ Roblox Ping Booster (Simple Tool) is a straightforward command-line utility desi
 2. **Open Terminal/Command Prompt:** Navigate to the directory where the tool is located.
 3. **Execute Command:** Run the command to initiate the optimization process.
     ```bash
-    ./roblox-ping-booster-simple
+    ./Booster.exe
     ```
 4. **Sit Back and Relax:** Let the tool do its job of optimizing your internet connection for better Roblox gaming experience.
 
