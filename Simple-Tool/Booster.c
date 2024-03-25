@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <windows.h>
 
 void clean_cache() {
     int tmp = system("del /q /s /f %TEMP%\\*.*");
